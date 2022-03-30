@@ -30,6 +30,31 @@
             <button type="submit" class="btn-submit">Login</button>
             <a href="#">Forgot password?</a>
             <p>I don't have an account. <a href="#" onclick="switchForm('Sign Up', event)">Sign Up</a></p>
+        </form>
+        <form action="#" class="sign-up">
+            <h1 class="title">Sign Up your account</h1>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="ibrasins@123.com">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Your password">
+                </div>
+                <span class="fade-text">Minimum of 8 characters</span>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Password</label>
+                <div class="input-group">
+                    <input type="password" id="confirm-password" placeholder="Enter your password again">
+                </div>
+                <span class="fade-text">Kindly make ensure the password matches</span>
+            </div>
+            <button type="submit" class="btn-submit">Sign Up</button>
+            <p>I already have an account. <a href="#" onclick="switchForm('Login', event)">Login</a></p>
 
         </form>
     
