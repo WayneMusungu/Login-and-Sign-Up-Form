@@ -29,10 +29,10 @@
             </div>
             <button type="submit" class="btn-submit">Login</button>
             <a href="#">Forgot password?</a>
-            <p>I don't have an account. <a href="#" onclick="switchForm('Sign Up', event)">Sign Up</a></p>
+            <p>I don't have an account. <a href="#" onclick="switchForm('register', event)">Register</a></p>
         </form>
-        <form action="#" class="sign-up">
-            <h1 class="title">Sign Up your account</h1>
+        <form action="#" class="register">
+            <h1 class="title">Register your account</h1>
             <div class="form-group">
                 <label for="email">Email</label>
                 <div class="input-group">
@@ -51,7 +51,7 @@
                 <div class="input-group">
                     <input type="password"  pattern=".{8,}" id="confirm-password" placeholder="Enter your password again">
                 </div>
-                <span class="fade-text">Kindly make ensure the password matches</span>
+                <span class="fade-text">Kindly ensure the password matches</span>
             </div>
             <button type="submit" class="btn-submit">Sign Up</button>
             <p>I already have an account. <a href="#" onclick="switchForm('Login', event)">Login</a></p>
