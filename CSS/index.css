@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
+:root{
+    --bs:#AECFFF;
+}
+
 body{
-    background:maroon;
+    background:lightblue;
     display: flex;
 	justify-content: center;
 	align-items: center;
@@ -30,7 +34,7 @@ form{
     width: 100%;
     padding: 20px;
     border-radius: 10px;
-    background: hotpink;
+    background: white;
     position: absolute;
     top: 50%;
     opacity: 0;
@@ -60,11 +64,67 @@ form .input-group{
     position: relative;
 
 }
-input{
+
+.form-group .fade-text{
+    font-size: medium;
+    font-weight: 200;
+    color: rgb(14, 141, 25);
+
+}
+
+
+.input-group input{
     padding: 12px 40px 12px 20px;
     outline: none;
     border-radius: 10px;
     width: 100%;
-    border:  1px; 
+    border:  1px solid darkgrey; 
     transition: all .6s ease;
+}
+/* FORM VALIDATION */
+.input-group input:focus,
+.input-group input:not(:placeholder-shown){
+    border-color: blue;
+    background: grey;
+}
+.input-group input:focus:valid {
+    box-shadow: 0 0 0 4px lightgreen;
+}
+.input-group input:valid:not(:placeholder-shown){
+    border-color: green;
+}
+.input-group input:invalid:not(:placeholder-shown){
+    border-color: rgb(221, 16, 16);
+}
+.input-group input:focus:invalid {
+    box-shadow: 0 0 0 4px #db7d7d;
+}
+.input-group input:focus,
+.input-group input:focus:placeholder-shown {
+	box-shadow: 0 0 0 4px var(--bs);
+}
+
+.btn-submit{
+    padding: 12px ;
+    display: block;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+    border: 0.5px;
+    border-radius: 10px;
+    background: blue;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+.btn-submit:hover{
+    background: darkblue;
+}
+
+a{
+
+    transition: 6s ease;
+}
+a:hover{
+    color: darkblue;
 }
